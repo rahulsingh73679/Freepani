@@ -23,7 +23,7 @@
 }
 
 body {
-    background: url('/finalbg.svg') top center;
+    background: url('../../7.gif') top center no-repeat;
     background-size: cover;
     font-family: 'FS Me Regular';
 }
