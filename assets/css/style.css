@@ -1,0 +1,288 @@
+/* Regular */
+
+@font-face {
+    font-family: 'FS Me Regular';
+    src: url('../fonts/FS Me-Regular.otf') format('opentype');
+    /* Add additional src formats if needed */
+}
+
+/* Heavy */
+
+@font-face {
+    font-family: 'FS Me Heavy';
+    src: url('../fonts/FS Me-Heavy.otf') format('opentype');
+    /* Add additional src formats if needed */
+}
+
+/* Bold */
+
+@font-face {
+    font-family: 'FS Me Bold';
+    src: url('../fonts/FS Me-Bold.otf') format('opentype');
+    /* Add additional src formats if needed */
+}
+
+body {
+    background: url('/7.gif') top center;
+    background-size: cover;
+    font-family: 'FS Me Regular';
+}
+
+.header {
+    padding: 2% 5%;
+    -webkit-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 10px 5px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* Existing styles remain unchanged */
+
+#terms {
+    display: block;
+    text-align: center;
+    font-size: 14px; /* Enhanced readability */
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #00000080; /* Optional: adds a semi-transparent background */
+    color: #FFF;
+}
+
+/* Mobile adjustments */
+@media (max-width: 576px) {
+    #terms {
+        font-size: 12px; /* Smaller for mobile */
+        padding: 8px;
+        margin-top: 20px;
+    }
+}
+
+
+
+
+h1,
+h2,
+h3,
+h4 {
+    color: #eebbaf;
+}
+
+p {
+    color: #FFF;
+    font-size: 1.5em;
+}
+
+.clear {
+    clear: both;
+}
+
+#header {
+    margin: 5% 0;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+#header #intro {}
+
+.carousel {
+    height: 500px;
+    margin-left: -60px;
+}
+
+.carousel-item {
+    padding: 3% 0;
+}
+
+.carousel-item img {
+    width: 90%;
+    margin-top: -40px;
+}
+
+.carousel-indicators {
+    left: initial;
+    bottom: initial;
+}
+
+.carousel-indicators [data-bs-target] {
+    box-sizing: initial;
+    flex: initial;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin-left: 1px;
+    text-indent: 0;
+    cursor: pointer;
+    border: 0;
+    border-bottom: 2px solid transparent;
+    position: relative;
+    background-color: transparent;
+    color: #FFF;
+    opacity: 1;
+    background-color: rgba(238, 187, 175, 0.5);
+    padding: 10px 25px;
+}
+
+.carousel-indicators .active {
+    color: #eebbaf;
+    border-bottom: 2px solid #eebbaf;
+}
+
+.work-copy {
+    padding-top: 5%;
+}
+
+.responsive-img {
+    width: 100%;
+    height: auto;
+}
+
+#logos {
+    margin-top: 300px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    width: 100%;
+    height: 179px;
+    /* Adjust height as needed */
+    position: relative;
+}
+
+#logos #image {
+    position: absolute;
+    left: 0;
+    height: 60%;
+    width: auto;
+}
+
+#offices {
+    margin: 100px 0;
+}
+
+#offices h4 {
+    font-size: 120%;
+    margin-bottom: 0;
+}
+
+#offices p {
+    font-size: 100%;
+}
+
+#contact a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+#social {
+    margin-top: 40px;
+}
+
+#social img {
+    width: 60%;
+    margin: 0px auto;
+}
+
+#history-image {
+    width: 80%;
+    position: absolute;
+    right: -6%;
+    margin-top: -15%;
+}
+
+#work {
+    margin-bottom: 10%;
+}
+
+#terms {
+    text-align: center;
+    font-size: 60%;
+    margin-bottom: 2%;
+    margin-top: -3%;
+    color: #FFF;
+}
+
+#terms a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 576px) {
+    .header img {
+        width: 15%;
+    }
+    .header {
+        box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .carousel-indicators {
+        left: 0;
+    }
+    .carousel {
+        margin-left: initial;
+    }
+    #history-image {
+        margin-top: 0;
+        right: 0px;
+    }
+    #logos {
+        text-align: center;
+        margin-top: 450px;
+        margin-bottom: 0px;
+        height: 79px;
+    }
+    #logos #image {
+        height: 70%;
+        width: auto;
+    }
+    #offices {
+        font-size: 70%;
+        margin: 25px 0;
+    }
+    #contact {
+        margin-bottom: 50px;
+    }
+    .carousel-item img {
+        width: 90%;
+        margin-top: 60px;
+    }
+    #history {
+        margin-top: 100%;
+    }
+    #terms {
+        font-size: 50%;
+    }
+    #terms a {
+        color: #FFF !important;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+    .carousel {
+        height: 500px; /* Adjust as needed */
+        overflow: hidden;
+    }
+
+    .carousel-item img {
+        max-height: 500px; /* Ensures images fit within the carousel height */
+        width: auto;
+    }
+}
+
+
+/* Ensure footer visibility on mobile */
+#terms {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+@media (max-width: 576px) {
+    #terms {
+        font-size: 14px; /* Adjust font size for mobile */
+        padding: 5px;
+    }
+}
